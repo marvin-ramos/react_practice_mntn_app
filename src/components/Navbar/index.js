@@ -8,18 +8,18 @@ import {
 	NavLogo, 
 	MobileIcon, 
 	NavMenu, 
-	NavItem, 
-	NavLinks,
-	} from './NavbarElements';
+	NavItem,
+	NavLinks, 
+} from './NavbarElements';
 
-const index = () => {
+const Navbar = ({ toggle }) => {
 	return (
 		<>
 			<Nav>
 				<NavbarContainer>
 					<NavLogo to="/">MNTN</NavLogo>
 					
-					<MobileIcon>
+					<MobileIcon onClick={toggle} >
 						<FaBars />
 					</MobileIcon>
 
@@ -52,4 +52,4 @@ const index = () => {
 	)
 }
 
-export default index
+export default Navbar

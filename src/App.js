@@ -2,14 +2,17 @@ import React from 'react';
 import './App.css';
 
 // importing libraries
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from './pages/index';
+import Home from './pages';
+import LoginPage from './pages/LoginPage';
 
 const App = () => {
   return (
-    <Router className="App">
-      <Home />
+    <Router>
+      <Switch>
+        <Route path='/' component={Home} exact />
+      </Switch>
     </Router>
   )
 }

@@ -43,7 +43,7 @@ const Navbar = ({ toggle }) => {
 
 					<NavMenu>
 						<NavItem>
-							<NavLinks to='accoun'><HiUserCircle/> Account</NavLinks>
+							<NavLinks to='account'><HiUserCircle/> Account</NavLinks>
 						</NavItem>
 					</NavMenu>		
 				</NavbarContainer>
